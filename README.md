@@ -7,7 +7,7 @@
   <h1 align="center">Tesla Clone Website</h1>
 
   <p align="center">
-    <a href="https://tesla-clone-react-rf.netlify.app/"><strong>Live Website »</strong></a>
+    <a href="https://tesla-clone-react-ts-rf.netlify.app/"><strong>Live Website »</strong></a>
     <br/>
     <br/>
   </p>
