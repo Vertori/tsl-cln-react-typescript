@@ -39,7 +39,6 @@ const Home = (): JSX.Element => {
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
-
       <Section
         title="Accessories"
         description=""
