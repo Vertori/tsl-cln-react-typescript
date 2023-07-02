@@ -16,7 +16,7 @@ const Section = ({
   rightBtnText,
 }: Props): JSX.Element => {
   return (
-    <Wrap bgImage={backgroundImg}>
+    <Wrap bgimage={backgroundImg}>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -34,10 +34,10 @@ const Section = ({
 
 export default Section;
 
-const Wrap = styled.div<{ bgImage: string }>`
+const Wrap = styled.div<{ bgimage: string }>`
   width: 100vw;
   height: 100vh;
-  background-image: ${(props) => `url("/assets/${props.bgImage}")`};
+  background-image: ${(props) => `url("/assets/${props.bgimage}")`};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
