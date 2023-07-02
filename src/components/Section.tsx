@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Fade } from "react-awesome-reveal";
 
 type Props = {
   title: string;
@@ -17,15 +18,19 @@ const Section = ({
 }: Props): JSX.Element => {
   return (
     <Wrap bgimage={backgroundImg}>
-      <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </ItemText>
+      <Fade direction="up">
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
+      </Fade>
       <Buttons>
-        <ButtonGroup>
-          <LeftButton>{leftBtnText}</LeftButton>
-          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
-        </ButtonGroup>
+        <Fade direction="up">
+          <ButtonGroup>
+            <LeftButton>{leftBtnText}</LeftButton>
+            {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+          </ButtonGroup>
+        </Fade>
         <DownArrow src="/assets/down-arrow.svg" />
       </Buttons>
     </Wrap>
